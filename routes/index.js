@@ -21,11 +21,28 @@ router.get("/sports/:sport", (req, res, next) => {
     .then(result => {
       const renderData = {};
       result.data.forEach(oneObj => {
-        
+        if (oneObj.name === undefined) {
+          renderData.total = {
+            golds: oneObj.gold,
+            silvers: oneObj.silver,
+            bronzes: oneObj.bronze
+          };
+        } else if (!(oneObj.name in renderData)) {
+          renderData[oneObj.name] = [];
+          renderData[oneObj.name].push(oneObj);
+        } else {
+          if(renderData[oneObj.name].year in renderData){
+            renderData[oneObj]
+          }
+          renderData[oneObj.name].push(oneObj);
+        }
       });
-      res.render("sports", sorted);
+      console.log("renderData.total :", renderData);
+      res.render("sports", { renderData });
     })
-    .catch(err => {});
+    .catch(err => {
+      console.log(err);
+    });
 });
 
 router.get("/olympic/:year", (req, res, next) => {
