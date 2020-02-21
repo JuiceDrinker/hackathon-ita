@@ -19,9 +19,9 @@ Description on what this website does
 | **Method** | **Route**                           | **Description**                                              | Request  - Body                                              |
 | ---------- | ----------------------------------- | :----------------------------------------------------------- | ------------------------------------------------------------ |
 | `GET`      | `/`                                 | Main page route.  Renders home `index` view.                 |                                                              |
-| `GET`      | `/Info page 1`                      | Renders `login` form view.                                   |                                                              |
-| `GET`      | `/Info page 2`                      | Renders `signup` form view.                                  |                                                              |
-| `GET`      | `/Info page 3`                      | Private route. Renders `edit-profile` form view.             |                                                              |
+| `GET`      | `/Info page 1`                      | Renders `Info page 1`  view.                                 |                                                              |
+| `GET`      | `/Info page 2`                      | Renders `Info page 2`  view.                                 |                                                              |
+| `GET`      | `/Info page 3`                      | Renders `Info page 3` view.                                  |                                                              |
 
 
 ## Links
