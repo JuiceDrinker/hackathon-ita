@@ -38,4 +38,4 @@ Description on what this website does
 
 ### Slides 
 
-[Slides Link](hhttps://docs.google.com/presentation/d/1oyWI3ivJqEZ_LSOYQrCMwXI9tUAS1WLOq1Fh-OwrJKo/edit?usp=sharing)
+[Slides Link](https://docs.google.com/presentation/d/1oyWI3ivJqEZ_LSOYQrCMwXI9tUAS1WLOq1Fh-OwrJKo/edit?usp=sharing)
