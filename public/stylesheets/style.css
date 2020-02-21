@@ -88,7 +88,8 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -102,37 +103,56 @@ hgroup,
 menu,
 nav,
 section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol,
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote,
 q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
   content: "";
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 .main-banner {
   background-color: red;
   height: 80vh;
-  text-align: center; }
+  text-align: center;
+}
 
 .top-sports {
-  height: 60vh;
-  background-color: blue; }
+  display: flex;
+  height: 40vh;
+  background-color: blue;
+  justify-content: space-evenly;
+}
 
-/*# sourceMappingURL=style.css.map */
+.cards {
+  border: 1px solid black;
+  height: 40%;
+  width: 300px;
+  margin-top: 30px;
+}
+
+.year{
+  border: 1px solid black;
+}
