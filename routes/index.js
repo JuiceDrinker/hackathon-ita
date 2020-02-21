@@ -11,13 +11,8 @@ router.get('/sports', (req, res, next) => {
 });
 
 router.get('/olympic', (req, res, next) => {
-  res.render('index');
+  res.render('olympic');
 });
 
-
-
-//app.get('/')
-//app.get('/sport/:id')
-//app.get('/olympic/:year)
 
 module.exports = router;
