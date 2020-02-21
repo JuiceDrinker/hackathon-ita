@@ -1,0 +1,21 @@
+<h1> {{renderData.0.year}}</h1>
+<div class='medals'>
+  <img src="../images/gold.png" alt="" class='medal'>
+  <p>{{renderData.total.[0]}}</p>
+  <img src="../images/silver.png" alt="" class='medal'>
+  <p>{{renderData.total.[1]}}</p>
+  <img src="../images/bronze.png" alt="" class='medal'>
+  <p>{{renderData.total.[2]}}</p>
+</div>
+{{#each renderData}}
+{{this.name}}
+<img src="../images/gold.png" alt="" class='medal'>
+
+{{this.gold}}
+<img src="../images/silver.png" alt="" class='medal'>
+
+{{this.silver}}
+<img src="../images/bronze.png" alt="" class='medal'>
+
+{{this.bronze}}
+{{/each}}

@@ -1,0 +1,29 @@
+<div>
+  <div class='main-banner'>
+    <div class='medals'>
+      <img src="../images/gold.png" alt="" class='medal'>
+      <p>{{renderData.total.golds}}</p>
+      <img src="../images/silver.png" alt="" class='medal'>
+      <p>{{renderData.total.silvers}}</p>
+      <img src="../images/bronze.png" alt="" class='medal'>
+      <p>{{renderData.total.bronzes}}</p>
+    </div>
+  </div>
+  <div class='top-athletes'>
+    {{#each renderData}}
+    {{@key}}
+    {{#each this}}
+    {{this.year}}
+    <img src="../images/gold.png" alt="" class='medal'>
+
+    {{this.gold}}
+    <img src="../images/silver.png" alt="" class='medal'>
+
+    {{this.silver}}
+    <img src="../images/bronze.png" alt="" class='medal'>
+
+    {{this.bronze}}
+    {{/each}}
+    {{/each}}
+  </div>
+</div>
