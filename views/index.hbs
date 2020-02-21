@@ -1,7 +1,9 @@
 <div>
   <div class="main-banner">
-    <img src="/images/rugbyone.jpg" alt="rugby img" class="banner-img">
-    <img src="/images/soccerteam.jpg" alt="soccer black and white" class="banner-img">
+    {{!-- <h1>TEAM ITALY</h1>
+    <h2>let us do story again</h2> --}}
+    {{!-- <img src="/images/rugbyone.jpg" alt="rugby img" class="banner-img"> --}}
+    <img src="/images/main.png" alt="soccer black and white" class="banner-img">
   </div>
   <div class="top-sports">
     <div class="cards">
@@ -25,7 +27,25 @@
   </div>
   <div class="best-disciplines">
     <h2>BEST disciplines</h2>
+    <br>
+    <div class="cards">
+        <img src="https://editorial01.shutterstock.com/wm-preview-1500/1870453a/b606f86a/reg-harris-cycle-racer-centre-training-with-two-young-cyclists-reginald-hargreaves-harris-obe-1-march-1920-a-22-june-1992-was-a-leading-english-track-racing-cyclist-in-the-1940s-and-1950s-he-won-the-world-amateur-sprint-title-in-1947-two-olympic-shutterstock-editorial-1870453a.jpg" alt="" class="topsports-medals">
+        <p class="totalmedals">Cycling</p>
+      </a>
+    </div>
+    <div class="cards">
+        <img src="https://stillmed.olympic.org/media/Images/OlympicOrg/News/2018/10/08/Fencing/2018-10-08-fencing-epee-thumbnail.jpg" alt="" class="topsports-medals">
+        <p class="totalmedals">Fencing
+        </p>
+      </a>
+    </div>
+    <div class="cards">
+        <img src="https://akns-images.eonline.com/eol_images/Entire_Site/2016710/rs_1024x759-160810195631-1024.Mary-Lou-Retton-Olympics.ms.081016.jpg?fit=inside|900:auto&output-quality=90" alt="" class="topsports-medals">
+        <p class="totalmedals">Gymnastics</p>
+      </a>
   </div>
+  </div>
+  <br>
   <div class='history'>
     {{#each data}}
     <div>
@@ -36,15 +56,15 @@
       <p>{{this.city}}</p>
       <img src="{{this.flag}}" alt="">
       <figure>
-        <img src="../images/gold.png" alt="" class='medal'>
+        <img src="../images/gold.png" alt="" class='small-medal'>
         <figcaption>{{this.gold}}</figcaption>
       </figure>
       <figure>
-        <img src="../images/silver.png" alt="" class='medal'>
+        <img src="../images/silver.png" alt="" class='small-medal'>
         <figcaption>{{this.silver}}</figcaption>
       </figure>
       <figure>
-        <img src="../images/bronze.png" alt="" class='medal'>
+        <img src="../images/bronze.png" alt="" class='small-medal'>
         <figcaption>{{this.bronze}}</figcaption>
       </figure>
       <a href="olympic/{{this.year}}"> LINK </a>
