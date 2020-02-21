@@ -21,18 +21,26 @@
     </div>
   </div>
   <div class='history'>
-    <div class='year'>
-      <div>
-        <figure>
-          <img
-            src="http://www.rightshotcorporate.com/wp-content/gallery/architecture-interiors/img-src22corporate-photography-london.jpg22-alt22architecture-and-interior-photography22-25.jpg"
-            alt=""
-            class='olympic-img'>
-          <figcaption> Year </figcaption>
-        </figure>
-
-      </div>
-
+    {{#each data}}
+    <div>
+      <figure>
+        <img src="" alt="">
+        <figcaption>{{this.year}}</figcaption>
+      </figure>
+      <p>{{this.city}}</p>
+      <figure>
+        <img src="../images/gold.png" alt="" class='medal'>
+        <figcaption>{{this.gold}}</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/silver.png" alt="" class='medal'>
+        <figcaption>{{this.silver}}</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/bronze.png" alt="" class='medal'>
+        <figcaption>{{this.bronze}}</figcaption>
+      </figure>
     </div>
+    {{/each}}
   </div>
 </div>
