@@ -1,1 +1,18 @@
-<h1>SPORTS PAGE</h1>
+<div>
+  {{#each result}}
+  <div class='main-banner'>
+    {{#if @first}}
+    <div class='medals'>
+      <img src="../images/gold.png" alt="" class='medal'>
+      <p>{{this.gold}}</p>
+      <img src="../images/silver.png" alt="" class='medal'>
+      <p>{{this.silver}}</p>
+      <img src="../images/bronze.png" alt="" class='medal'>
+      <p>{{this.bronze}}</p>
+    </div>
+    {{/if}}
+  </div>
+  <div class='top-athletes'>
+  </div>
+  {{/each}}
+</div>

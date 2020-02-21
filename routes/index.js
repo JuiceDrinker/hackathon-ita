@@ -14,11 +14,22 @@ router.get("/", (req, res, next) => {
     .catch(err => {});
 });
 
-router.get("/sports", (req, res, next) => {
-  res.render("sports");
+router.get("/sports/:sport", (req, res, next) => {
+  const sport = req.params.sport;
+  axios
+    .get(`https://jsondata-italy.herokuapp.com/top_${sport}`)
+    .then(result => {
+      const renderData = {};
+      result.data.forEach(oneObj => {
+        
+      });
+      res.render("sports", sorted);
+    })
+    .catch(err => {});
 });
 
-router.get("/olympic", (req, res, next) => {
+router.get("/olympic/:year", (req, res, next) => {
+  console.log("success!");
   res.render("olympic");
 });
 
