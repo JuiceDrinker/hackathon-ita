@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+
 html,
 body,
 div,
@@ -108,6 +105,7 @@ section {
 
 body {
   line-height: 1;
+  font-family: 'Permanent Marker';
 }
 
 ol,
@@ -134,25 +132,71 @@ table {
 }
 
 .main-banner {
-  background-color: red;
   height: 80vh;
   text-align: center;
+  
+}
+
+.banner-img{
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  display: flexbox;
+  margin: -10px;
 }
 
 .top-sports {
+  width: 100%px;
+  opacity: 0.88;
+  border: solid 1px #979797;
+  background-color: rgba(0, 0, 0, 0.82);
   display: flex;
-  height: 40vh;
-  background-color: blue;
+  height: 55vh;
   justify-content: space-evenly;
+  text-align: center;
+
 }
 
 .cards {
-  border: 1px solid black;
   height: 40%;
   width: 300px;
   margin-top: 30px;
+  text-align: center;
+
+}
+
+.totalmedals{
+  width: 52px;
+  height: 64px;
+  font-size: 45px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+  font-family: 'Permanent Marker';
 }
 
 .year{
   border: 1px solid black;
+}
+
+.best-disciplines{
+  width: 100%;
+  height: 70vh;
+  background-color: #e9eaec;
+  font-family: 'Permanent Marker';
+  font-size: 30px;
+}
+
+.topsports-medals{
+  width: 250px;
+  height: 250px;
+}
+
+.city-image{
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
 }

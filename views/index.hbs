@@ -1,30 +1,36 @@
 <div>
-  <div class="main-banner"></div>
+  <div class="main-banner">
+    <img src="/images/rugbyone.jpg" alt="rugby img" class="banner-img">
+    <img src="/images/soccerteam.jpg" alt="soccer black and white" class="banner-img">
+  </div>
   <div class="top-sports">
     <div class="cards">
       <a href="">
-        <img src="" alt="">
-        <p>Some small text here</p>
+        <img src="../images/gold.png" alt="" class="topsports-medals">
+        <p class="totalmedals">278</p>
       </a>
     </div>
     <div class="cards">
       <a href="">
-        <img src="" alt="">
-        <p>Some small text here</p>
+        <img src="../images/silver.png" alt="" class="topsports-medals">
+        <p class="totalmedals">129</p>
       </a>
     </div>
     <div class="cards">
       <a href="">
-        <img src="" alt="">
-        <p>Some small text here</p>
+        <img src="../images/bronze.png" alt="" class="topsports-medals">
+        <p class="totalmedals">49</p>
       </a>
     </div>
+  </div>
+  <div class="best-disciplines">
+    <h2>BEST disciplines</h2>
   </div>
   <div class='history'>
     {{#each data}}
     <div>
       <figure>
-        <img src="{{this.img}}" alt="">
+        <img src="{{this.img}}" alt="" class="city-image">
         <figcaption>{{this.year}}</figcaption>
       </figure>
       <p>{{this.city}}</p>
