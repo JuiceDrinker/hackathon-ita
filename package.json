@@ -1,19 +1,24 @@
 {
-  "name": "hackathon-ita",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "hackathon-italy",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "dev": "DEBUG=hackathon-italy:* nodemon ./bin/www",
+    "dev-windows": "nodemon ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JuiceDrinker/hackathon-ita.git"
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "hbs": "^4.0.1",
+    "mongoose": "^5.2.10",
+    "morgan": "^1.9.0",
+    "node-sass-middleware": "^0.11.0",
+    "serve-favicon": "^2.5.0"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JuiceDrinker/hackathon-ita/issues"
-  },
-  "homepage": "https://github.com/JuiceDrinker/hackathon-ita#readme"
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
 }
