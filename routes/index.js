@@ -31,10 +31,6 @@ router.get("/sports/:sport", (req, res, next) => {
           renderData[oneObj.name] = [];
           renderData[oneObj.name].push(oneObj);
         } else {
-          if(renderData[oneObj.name].year in renderData){
-            renderData[oneObj]
-          }
-          renderData[oneObj.name].push(oneObj);
         }
       });
       console.log("renderData.total :", renderData);
@@ -45,9 +41,27 @@ router.get("/sports/:sport", (req, res, next) => {
     });
 });
 
-router.get("/olympic/:year", (req, res, next) => {
-  console.log("success!");
-  res.render("olympic");
+router.get("/olympics/:year", (req, res, next) => {
+  const year = req.params.year;
+  axios
+    .get("https://jsondata-italy.herokuapp.com/top_athletes_by_year")
+    .then(result => {
+      const renderData = result.data.filter(element => {
+        return (element.year = year);
+      });
+      renderData.total = [0, 0, 0];
+      renderData.forEach(e => {
+        if (!(typeof e.gold === NaN)) {
+          renderData.total[0] += e.gold;
+          renderData.total[1] += e.silver;
+          renderData.total[2] += e.bronze;
+        }
+      });
+      res.render("olympic", { renderData });
+    })
+    .catch(err => {
+      console.log(err);
+    });
 });
 
 module.exports = router;
